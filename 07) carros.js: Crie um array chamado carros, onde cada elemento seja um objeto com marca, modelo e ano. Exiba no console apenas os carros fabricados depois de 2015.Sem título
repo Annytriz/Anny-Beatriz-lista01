@@ -1,1 +1,13 @@
+const carros = [
+    { marca: "Ford", modelo: "Ka", ano: 2016 },
+    { marca: "Fiat", modelo: "Argo", ano: 2021 },
+    { marca: "Chevrolet", modelo: "Corsa", ano: 2012 },
+    { marca: "Hyundai", modelo: "HB20", ano: 2019 },
+    { marca: "Renault", modelo: "Clio", ano: 2015 }
+];
 
+const carrosRecentes = carros.filter(carro => carro.ano > 2015);
+
+for (const carro of carrosRecentes) {
+    console.log(`${carro.marca} ${carro.modelo} - ${carro.ano}`);
+}
