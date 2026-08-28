@@ -1,1 +1,5 @@
+const numeros = [5, 10, 15, 20, 25];
 
+for (let posicao = numeros.length - 1; posicao >= 0; posicao--) {
+    console.log(numeros[posicao]);
+}
