@@ -1,1 +1,17 @@
+const valores = [31, 7, 18, 42, 11];
 
+let maiorValor = valores[0];
+let menorValor = valores[0];
+
+for (const valor of valores) {
+    if (valor > maiorValor) {
+        maiorValor = valor;
+    }
+
+    if (valor < menorValor) {
+        menorValor = valor;
+    }
+}
+
+console.log(`Maior valor: ${maiorValor}`);
+console.log(`Menor valor: ${menorValor}`);
