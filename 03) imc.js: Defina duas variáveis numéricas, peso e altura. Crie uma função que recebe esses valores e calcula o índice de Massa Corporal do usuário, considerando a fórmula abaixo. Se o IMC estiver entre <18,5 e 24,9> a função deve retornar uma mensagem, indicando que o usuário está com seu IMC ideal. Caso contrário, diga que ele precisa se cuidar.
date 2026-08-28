@@ -1,1 +1,14 @@
+const pesoPessoa = 68;
+const alturaPessoa = 1.72;
 
+function analisarIMC(peso, altura) {
+    const resultado = peso / (altura ** 2);
+
+    if (resultado >= 18.5 && resultado <= 24.9) {
+        console.log(`IMC: ${resultado.toFixed(2)}. Seu IMC está ideal.`);
+    } else {
+        console.log(`IMC: ${resultado.toFixed(2)}. Você precisa se cuidar.`);
+    }
+}
+
+analisarIMC(pesoPessoa, alturaPessoa);
