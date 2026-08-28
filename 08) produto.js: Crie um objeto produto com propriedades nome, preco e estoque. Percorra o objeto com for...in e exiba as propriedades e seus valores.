@@ -1,1 +1,10 @@
+const produto = {
+    nome: "Celular",
+    preco: 1800,
+    estoque: 15
+};
 
+for (const chave in produto) {
+    const valor = produto[chave];
+    console.log(`${chave}: ${valor}`);
+}
