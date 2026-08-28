@@ -1,1 +1,9 @@
+const valores = [12, 4, 9];
 
+function mostrarEmOrdem(valores) {
+    const ordenados = [...valores].sort((a, b) => a - b);
+
+    console.log(`Números em ordem crescente: ${ordenados.join(" - ")}`);
+}
+
+mostrarEmOrdem(valores);
