@@ -1,1 +1,34 @@
+const turmas = [
+    {
+        nomeProfessor: "Roberto",
+        alunos: [
+            { nome: "Lucas", nota: 8.5 },
+            { nome: "Amanda", nota: 6.0 },
+            { nome: "Felipe", nota: 7.5 },
+            { nome: "Carolina", nota: 5.5 }
+        ],
 
+        ordenarAlunos() {
+            this.alunos.sort((a, b) => a.nota - b.nota);
+        },
+
+        mostrarResultado() {
+            for (const aluno of this.alunos) {
+                if (aluno.nota >= 7) {
+                    console.log(
+                        `Parabéns ${aluno.nome}, você foi aprovado com a nota ${aluno.nota}`
+                    );
+                } else {
+                    console.log(
+                        `Não foi dessa vez ${aluno.nome}, você reprovou com a nota ${aluno.nota}`
+                    );
+                }
+            }
+        }
+    }
+];
+
+for (const turma of turmas) {
+    turma.ordenarAlunos();
+    turma.mostrarResultado();
+}
