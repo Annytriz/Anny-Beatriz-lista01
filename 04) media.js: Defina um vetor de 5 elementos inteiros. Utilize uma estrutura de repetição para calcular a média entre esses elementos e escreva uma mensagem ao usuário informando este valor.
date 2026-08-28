@@ -1,1 +1,10 @@
+const notas = [7, 9, 6, 8, 10];
+let total = 0;
 
+for (const nota of notas) {
+    total += nota;
+}
+
+const resultado = total / notas.length;
+
+console.log(`A média dos elementos é ${resultado.toFixed(2)}.`);
